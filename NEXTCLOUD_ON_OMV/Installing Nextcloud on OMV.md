@@ -3,7 +3,7 @@ there're a lot of ways to install nextcloud and one of them is not a very solid 
 ### Preparing before installation
 * Create extra directories for data base and for storing files (nextcloud_app : nextcloud_db respectively (that was just an instance)).
 It looks like like that:
-![[Снимок экрана 2026-05-01 в 15.54.16.png]]
+![[1.png]]
 
 * Install docker (you can do that directly in OMV), preview of your directories scheme looks like that:
   -- OMV
@@ -12,7 +12,7 @@ It looks like like that:
 
 * Go to /Services/Compose/Settings and set the same as i have at screen below:
 
-![[Снимок экрана 2026-05-01 в 16.16.43.png]]![[Снимок экрана 2026-05-01 в 16.16.55.png]]
+![[Снимок экрана 2026-05-01 в 16.16.43.png]]![[3]]
 
  after go to Services/Compose/Files and create there a new one, after set this code there up:
 ```yaml
