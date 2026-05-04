@@ -19,36 +19,34 @@ It looks like like that:
 
  after go to Services/Compose/Files and create there a new one, after set this code there up:
 ```yaml
-version: '3'
+version: '3.8'
 
 services:
   db:
-    image: mariadb:10.6
-    container_name: nextcloud_db
-    restart: always
+    image: mariadb:10.11
+    restart: unless-stopped
+    volumes:
+      - /srv/dev-disk-by-uuid-ba0d7105-215a-411a-9df2-39983cbf2521/nextcloud_db/   # change XXXX + use HDD shared folder
     environment:
-      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_ROOT_PASSWORD: YourStrongRootPass123!
+      MYSQL_PASSWORD: YourStrongNcPass123!
       MYSQL_DATABASE: nextcloud
       MYSQL_USER: nextcloud
-      MYSQL_PASSWORD: nextcloudpass
-    volumes:
-      - /srv/dev-disk-by-uuid-e37a1406-b2fc-4857-9f52-b7549902f7fa/nextcloud_d/
 
   app:
-    image: nextcloud
-    container_name: nextcloud_app
-    restart: always
+    image: nextcloud:apache
+    restart: unless-stopped
     ports:
-      - 8080:80
-    depends_on:
-      - db
+      - "8080:80"
     volumes:
-      - /srv/dev-disk-by-uuid-e37a1406-b2fc-4857-9f52-b7549902f7fa/nextcloudone/
+      - /srv/dev-disk-by-uuid-ba0d7105-215a-411a-9df2-39983cbf2521/nextcloud_appdata/
     environment:
       MYSQL_HOST: db
-      MYSQL_DATABASE: nextcloud
       MYSQL_USER: nextcloud
-      MYSQL_PASSWORD: nextcloudpass
+      MYSQL_PASSWORD: YourStrongNcPass123!
+      MYSQL_DATABASE: nextcloud
+    depends_on:
+      - db
 ```
 (CHANGE VOLUMES ON THE RIGHT DATA)
 
