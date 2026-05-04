@@ -1,6 +1,9 @@
 there're a lot of ways to install nextcloud and one of them is not a very solid or not proper one according to participants, however it works and works pretty fine, in the future i'll change an approach to nextcloud installation by installing it directly on PC (in my case it's RPi4) using docker that's supposed to be as a right and proper approach by people.
 
-### Preparing before installation
+********
+
+
+### Preparation before installation
 * Create extra directories for data base and for storing files (nextcloud_app : nextcloud_db respectively (that was just an instance)).
 It looks like like that:
 ![[1.png]]
