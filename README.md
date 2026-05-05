@@ -1,5 +1,5 @@
 ![OpenMediaVault](https://img.shields.io/badge/OpenMediaVault-6.x-5DACDF?style=for-the-badge&logo=debian&logoColor=white)
-![Nextcloud](https://img.shields.io/badge/Nextcloud-Self--Hosted-0082C9?style=for-the-badge&logo=nextcloud&logoColor=white)
+![Nextcloud](https://img.shields.io/badge/Nextcloud-Service-0082C9?style=for-the-badge&logo=nextcloud&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 # Nextcloud-on-OpenMediaVault
