@@ -5,6 +5,12 @@
 # Nextcloud-on-OpenMediaVault
 installation and configuring nextcloud by OMV via Compose
 
+# Features
+- Clean Docker Compose setup optimized for OMV
+- MariaDB database with persistent storage
+- Proper volume configuration
+- Easy to maintain for long-term use
+
 # The guide covers:
 1. Prerequisites
 2. Docker Compose setup
@@ -12,6 +18,17 @@ installation and configuring nextcloud by OMV via Compose
 4. First boot & basic security
 5. Common issues and fixes ("Trusted domains" issue)
 
+# Technologies that I used
+
+- **OS**: OpenMediaVault 6 / 7
+- **Runtime**: Docker + Docker Compose
+- **Database**: MariaDB
+- **Platform**: Raspberry Pi / x86
+
+# The installation guide:
+https://github.com/EdwardBorry/Nextcloud-on-OpenMediaVault/blob/main/NEXTCLOUD_ON_OMV/Installing%20Nextcloud%20on%20OMV.md
+
+# Preview
 <img width="1458" height="748" alt="Снимок экрана 2026-05-21 в 00 43 54" src="https://github.com/user-attachments/assets/28a97e2a-1e47-438b-bc9e-c512e4caf25c" />
 
 <img width="1470" height="742" alt="Снимок экрана 2026-05-21 в 00 49 47" src="https://github.com/user-attachments/assets/bd80418a-90d6-4c7d-a522-86b17490d2b3" />
